@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int age=sc.nextInt();
+        int wei=sc.nextInt();
+        if (age>18){
+            if(wei>50){
+            System.out.println("Eligible");
+        }
+        else {
+            System.out.println("Under Weight");
+        }
+        
+    }
+    else {
+        if (wei>50){
+            System.out.println("Under Age");
+        }
+        else{
+            System.out.println("Under Age and Under Weight");
+        }
+    }
+    }
+}
