@@ -1,0 +1,20 @@
+package collection;
+import java.util.*;
+public class basics{
+
+     public static void main(string[] args){
+       ArrayList<String> list=new ArrayList<String>();
+       list.add("Table");
+       list.add("Chair");
+       list.add("Pen");
+       list.add("Note Book");
+       list.add("Lap");
+      System.out.println(list);
+      Iterator itr=list.iterator();
+      while(itr.hasNext())
+            System.out.println(itr.next());
+      System.out.println();
+      list.set(2,"Charger");
+      System.out.println(list);
+     }
+}
