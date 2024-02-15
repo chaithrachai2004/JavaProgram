@@ -1,0 +1,24 @@
+import java.util.Map;
+import java.util.HashMap;
+class hashMap{
+    public static void main(String[] args) {
+         HashMap<String, Integer> hm=new HashMap<> ();
+         hm.put("Suresh", 56);
+         hm.put("Naveen", 48);
+         hm.put("Hari", 87);
+         hm.put(null,78);
+         System.out.println(hm);//put:to add 
+         System.out.println(hm.get("Hari"));//get:to get the value
+         hm.remove("Hari");//remove:to delete
+         System.out.println(hm);
+         System.out.println(hm.size());//it will print a size of teh array
+         System.out.println(hm.containsKey("Hari"));//key:string return true or false
+         System.out.println(hm.containsValue(48));//value:integer return T or F
+         for(Map.Entry<String,Integer> e: hm.entrySet()) {
+             System.out.println("Key: "+e.getKey()+"Value:"+e.getValue());
+            
+         }
+         
+    }
+}
+
